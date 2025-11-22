@@ -1,0 +1,32 @@
+cpf = '74682489070'
+nove_digitos = cpf[:9]
+contador_regressivos1 = 10
+
+resultado1 = 0
+
+for digito in nove_digitos:
+    resultado1 += int(digito) * contador_regressivo1
+    contador_regressivo1 -= 1
+
+digito1 = (resultado1 * 10) % 11
+
+digito1 = digito1 if digito1 <= 9 else 0
+
+dez_digitos = nove_digitos + str(digito1)
+contador_regressivo2 = 11
+
+resultado2 = 0
+
+for digito in dez_digitos:
+    resultado2 += int(digito) * contador_regressivo2
+    contador_regressivo2 -= 1
+
+digito2 = (resultado2 * 10) % 11
+digito2 = digito2 if digito2 <= 9 else 0
+
+cpf_calculo = f'{nove_digitos}{digito1}{digito2}'
+
+if cpf_calculo == cpf:
+    print(f'{cpf} é válido!')
+else:
+    print('CPF inválido!')

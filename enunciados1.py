@@ -1,0 +1,11 @@
+while True:
+    try:
+        num = int(input('Digite um número inteiro: '))
+        if num % 2 == 0:
+            print(f'O número {num} é par.')
+        else:
+            print(f'O numero {num} é ímpar.')
+    except ValueError:
+        print('Você não digitou um número inteiro.')
+        continue
+    break
