@@ -1,4 +1,13 @@
-cpf = '746.824.890-70'.replace('.', '').replace('-', '')
+import re
+
+cpf = re.sub(
+    r'[^0-9]',
+    '',
+    '746.824.890-70'
+    )
+
+
+
 print(cpf)
 nove_digitos = cpf[:9]
 contador_regressivo1 = 10

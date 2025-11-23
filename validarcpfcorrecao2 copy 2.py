@@ -1,6 +1,9 @@
-cpf = '746.824.890-70'.replace('.', '').replace('-', '')
-print(cpf)
-nove_digitos = cpf[:9]
+import random
+
+nove_digitos = ''
+
+for n in range(0, 9):
+    nove_digitos += str(random.randint(9))
 contador_regressivo1 = 10
 
 resultado1 = 0
@@ -27,7 +30,4 @@ digito2 = digito2 if digito2 <= 9 else 0
 
 cpf_calculo = f'{nove_digitos}{digito1}{digito2}'
 
-if cpf_calculo == cpf:
-    print(f'{cpf} é válido!')
-else:
-    print('CPF inválido!')
+print(cpf_calculo)
