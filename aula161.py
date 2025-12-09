@@ -1,0 +1,3 @@
+import aula159_package
+
+print(aula159_package.nova_variavel)
