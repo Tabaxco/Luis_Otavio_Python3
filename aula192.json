@@ -1,0 +1,23 @@
+{
+  "nome": "Guilherme",
+  "sobrenome": "Leite Rodrigues",
+  "enderecos": [
+    {
+      "rua": "R1",
+      "numero": 180
+    },
+    {
+      "rua": "Laguinho",
+      "numero": 4
+    }
+  ],
+  "altura": 1.77,
+  "numeros_preferidos": [
+    2,
+    4,
+    8,
+    10
+  ],
+  "dev": true,
+  "nada": null
+}
