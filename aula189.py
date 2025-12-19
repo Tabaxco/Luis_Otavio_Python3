@@ -7,6 +7,7 @@ with open(caminho_arquivo, 'w+') as arquivo:
     arquivo.writelines(
         ('Linha 3\n', 'Linha 4\n')
     )
+    
     arquivo.seek(0,0)
     print(arquivo.read())
     arquivo.seek(0,0)
