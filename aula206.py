@@ -9,8 +9,11 @@ class Pessoa:
     def get_ano_nascimento(self):
         return( f'{Pessoa.ANO_ATUAL=} - {self.idade=}')
 
-Guilherme = Pessoa('Guilherme', 18)
-Guilherme.ANO_ATUAL = 2026
-print(Guilherme.ANO_ATUAL)
-print(Guilherme.get_ano_nascimento())
-print(Pessoa.ANO_ATUAL)
+dados = {'nome':'João', 'idade': 36}
+p1 = Pessoa(**dados)
+
+#p1 = Pessoa('kalel', 35)
+#p1.nome = 'Eita'
+#del p1.nome
+#print(p1.__dict__)
+print(vars(p1))
